@@ -17,6 +17,7 @@ from django.utils import translation
 from home.forms import SearchForm
 from home.models import Setting, ContactForm, ContactMessage, FAQ, SettingLang, Language
 from mysite import settings
+from order.models import ShopCart
 from product.models import Category, Product, Images, Comment, Variants, ProductLang, CategoryLang
 from user.models import UserProfile
 
@@ -47,13 +48,24 @@ def index(request):
 
     selectlanguage_url = reverse('selectlanguage')
     page="home"
+
+    total = 0
+    current_user = ''
+    current_user = request.user
+    if bool(current_user):
+        shopcart = ShopCart.objects.filter(user_id=current_user.id)
+        total=0
+        for rs in shopcart:
+            total += rs.product.price * rs.quantity
+    
     context={'setting':setting,
              'page':page,
              'products_slider': products_slider,
              'products_latest': products_latest,
              'products_picked': products_picked,
              'category': category,
-             'selectlanguage_url': selectlanguage_url
+             'selectlanguage_url': selectlanguage_url,
+             'total': total
              }
     return render(request,'index.html',context)
 
