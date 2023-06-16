@@ -1,45 +1,105 @@
+# Документація роботи бакалавра
+## Тема: Розробка інтернет-магазину з використанням мови Python, фреймворка Django та бази даних PostgreSQL
+
+### 1. Вступ
+
+Документація роботи бакалавра описує процес розробки інтернет-магазину з використанням мови програмування Python, фреймворка Django та бази даних PostgreSQL. Ця робота включає огляд задачі, аналіз вимог, проектування системи, реалізацію та тестування.
+
+### 2. Огляд задачі
+
+Задачею роботи є розробка повнофункціонального інтернет-магазину з можливістю перегляду товарів, додавання їх у кошик, здійснення покупки, а також адміністрування системи зі сторони адміністратора. Метою проекту є створення зручної та ефективної платформи для електронної комерції.
+
+### 3. Аналіз вимог
+
+Перед початком розробки необхідно провести аналіз вимог до системи. Головні функціональні та нефункціональні вимоги включають:
+
+#### 3.1 Функціональні вимоги
+
+- Реєстрація та авторизація користувачів
+- Перегляд каталогу товарів
+- Додавання товарів у кошик
+- Здійснення покупки
+- Керування замовленнями
+- Можливість відстежування статусу замовлення
+- Адміністрування системи
+
+#### 3.2 Нефункціональні вимоги
+
+- Забезпечення безпеки даних
+- Висока продуктивність
+- Інтуїтивний та привабливий інтерфейс користувача
+- Підтримка різних типів платежів
+- Сумісність з різними пристроями та браузерами
+
+### 4. Проектування системи
+
+На основі аналізу вимог розробляється архі
+
+тектура системи. Основні компоненти проекту включають:
+
+- Модель даних для зберігання інформації про користувачів, товари, замовлення та інші сутності
+- Користувацький інтерфейс для взаємодії з користувачами
+- Логіка додавання товарів до кошика, оформлення замовлення та обробки платежів
+- Адміністративний інтерфейс для керування системою
+- Інтеграція з зовнішніми сервісами платежів
+
+### 5. Реалізація
+
+Реалізація системи здійснюється з використанням мови програмування Python та фреймворка Django. Django надає широкий набір інструментів для швидкого розробки веб-додатків. Для зберігання даних використовується база даних PostgreSQL, яка забезпечує надійну та масштабовану систему управління даними.
+
+Реалізація системи включає створення моделей даних, відповідних представлень для перегляду та редагування даних, а також логіку для обробки бізнес-логіки, таку як додавання товарів до кошика, оформлення замовлення та інші операції.
+
+### 6. Тестування
+
+Після реалізації системи необхідно провести тестування для перевірки її коректності та функціональності. Тестування включає модульні тести для окремих компонентів системи, інтеграційні тести для перевірки взаємодії між компонентами та системні тести для оцінки роботи системи в цілому.
+
+### 7. Висновки
+
+У результаті роботи бакалавра був розроблений повнофункціональний інтернет-магазин з використанням мови програмування Python, фреймворка Django та бази даних PostgreSQL. Система відповідає всім вимогам
+
+, включаючи функціональні та нефункціональні вимоги. Вона забезпечує зручну та безпечну платформу для електронної комерції та має потенціал для подальшого розширення та вдосконалення.
+
+# Опис проекту
+
+Проект інтернет-магазину на базі Django включає наступні компоненти та функціональність:
+
+1. Встановлення та структура проекту Django
+2. Реалізація веб-шаблону CSS для електронної комерції
+3. Моделювання бази даних та взаємозв'язки між категоріями, продуктами та завантаження зображень
+4. Розміщення проекту на GitHub
+5. Галерея зображень продуктів
+6. Використання розширеного текстового редактора CKEditor
+7. Сторінки "Про нас" та "Контакти"
+8. Форма зв'язку та повідомлення від користувачів
+9. Дерево категорій та меню підкатегорій
+10. Автоматичне створення слагу (URL) для категорій та продуктів
+11. Динамічний слайдер на головній сторінці
+12. Відображення продуктів зображеннями на головній сторінці
+13. Виведення списку продуктів категорії
+14. Пошук продуктів
+15. Автозаповнення пошуку за допомогою AJAX та jQuery
+16. Сторінка деталей продукту з галереєю зображень
+17. Відгуки, коментарі та рейтинги продуктів
+18. Додавання, видалення та оновлення товарів у кошику
+19. Інформація про профіль користувача
+20. Налаштування входу/виходу користувача з обранням зображення
+21. Форма реєстрації користувача. Автоматичне створення профілю користувача при реєстрації
+22. Замовлення товарів користувачем
+23. Користувацьке меню та панель сторінки профілю
+24. Оновлення та зміна інформації про користувача та профілю
+25. Зміна пароля користувача
+26. Список та деталі замовлень користувача
+27. Список та видалення коментарів користувача
+28. Підрахунок та середнє значення відгуків для продуктів
+29. Часто задавані питання (FAQ) з використанням акордеона jQuery UI
+30. Варіанти атрибутів продуктів (розмір, колір) у стилі Amazon (частина 1)
+31. Варіанти атрибутів продуктів (розмір, колір) у стилі Amazon (частина 2)
+32. Використання функцій у шаблонах за допомогою Template Tags
+33. Багатомовність статичних HTML-файлів та URL (Частина 1)
+34. Багатомовність базових моделей даних (Частина 2)
+35. Багатомовність дерева категорій за допомогою рекурсивної функції (Частина 3)
+36. Багатовалютність
+
 <b>Admin Superuser Information</b> <br>
 <b>User Name :</b> admin<br>
 <b>User Passw:</b> Qwert12345*<br>
-
-# Django-E-Commerce
-This project is a multilingual and multi-currency e-commerce Python Djnago web project.<br><br>
-
-<b>Project include</b> <br>
-1 Django Installation Structure Introduction <br>
-2 Django E Commerce css web template implementation <br>
-3 Django E Commerce database model admin relation category and product image upload <br>
-4 Django E Commerce Github <br>
-5 Django E Commerce Product Image gallery <br>
-6 Django E Commerce Implemet Richtext Editor Ckeditor <br>
-7 Django E Commerce Setting About Contact pages <br>
-8 Django E Commerce Contact Us Form and Messages <br>
-9 Django E Commerce Category Tree Subcategory menu <br>
-10 Django E Commerce Automatically Creating Slug for Category and Product <br>
-11 Django E Commerce Dynamic Slider in homepage <br>
-12 Django E Commerce products with images on homepage <br>
-13 Django E Commerce Listing Category products <br>
-14 Django E Commerce Search Products <br>
-15 Django E Commerce Autocomplete in Search by Using AJAX JQuery <br>
-16 Django E Commerce Product detail page with image gallery <br>
-17 Django E Commerce Product Review Comment Rating <br>
-18 Django E Commerce Shop cart Add list delete items <br>
-19 Django E Commerce user profile information <br>
-20 Django E Commerce user custom login logout user image <br>
-21 Django E Commerce user signup form <br>
-21a Django E Commerce Creating User profiles automatically at the User Signup time <br>
-22 Django E Commerce order products <br>
-23 Django E Commerce User Menu & Panel Profile Page <br>
-24 Django E Commerce Update Change User & Profile Information <br>
-25 Django E Commerce Change User Password <br>
-26 Django E Commerce User Order Product List and Detail <br>
-27 Django E Commerce User Comments List and Delete <br>
-28 Django E Commerce Count and Average of Products Reviews <br>
-29 Django E Commerce Frequently Asked Questions FAQ with Jquery ui Accordion <br>
-30 Django E Commerce Product Attributes Variants Amazon style Size Color #1 <br>
-31 Django E Commerce Product Attributes Variants Amazon style Size Color #2 <br>
-32 Django E Commerce Access to functions from templates (Template Tags) <br>
-33 Django E Commerce Multi Language on static html files and Urls Part1 <br>
-34 Django E Commerce Multi Language on Database Models Part2 <br>
-35 Django E Commerce Multi Language on Category Tree Recursive Function Part3 <br>
-36 Django E Commerce Multi Currency <br>
